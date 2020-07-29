@@ -18,6 +18,7 @@ export default {
   },
   mounted () {
     EventBus.$on('SET_TEXT', (data) => {
+      // eslint-disable-next-line
       console.log('HelloWorld: ' + data)
     })
   }

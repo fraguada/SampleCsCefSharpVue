@@ -14,6 +14,7 @@ new Vue({
   render: h => h(App),
   mounted () {
     EventBus.$on('add-text', (data) => {
+      // eslint-disable-next-line
       console.log('main:' + data)
       this.$store.commit('ADD_TEXT', data)
     })
