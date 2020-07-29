@@ -11,7 +11,7 @@ export default {
   }),
   methods: {
     doSomethingRhino () {
-      let args = { location: [0, 0, 0], radius: 20 }
+      const args = { location: [0, 0, 0], radius: 20 }
       // eslint-disable-next-line
         Interop.doSomething(args)
     }
